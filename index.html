@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e7dc222081.js" crossorigin="anonymous"></script>
+    <title>My web</title>
+</head>
+<body>
+    <!-- header section starts  -->
+
+<header>
+
+    <div class="user">
+        <img src="images/logo.png">
+        <h3 class="name">Web World</h3>
+        <p class="post">It's my youtube Channel</p>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#service">service</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- content section starts  -->
+
+<div class="container">
+
+    <section class="home" id="home">
+
+        <h3>Hi What's up</h3>
+        <h3 class="name">Its MY <span>Youtube Channel</span></h3>
+        <h3 class="post">Let's <span class="typing-text">Subscribe</span></h3>
+
+        <a href="#"><button class="btn">Subscribe</button></a>
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+
+    </section>
+
+    <!-- about section  -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading">about me</h1>
+
+        <div class="content">
+            <h3 class="name"> I am a <span> Youtuber </span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quos ipsam, temporibus veritatis sed dignissimos. Ratione consequuntur sapiente reiciendis dolorem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, iusto hic neque illo dolorem facere laborum quam inventore architecto voluptates totam quo corrupti assumenda nihil voluptatum optio ullam cupiditate excepturi?</p>
+        </div>
+
+        <div class="skills">
+            <div class="progress">
+                <h3>html <span>95%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>css <span>85%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>javascript <span>65%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- service section  -->
+    <section class="service" id="service">
+
+        <h1 class="heading">my services</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fab fa-html5"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, sed.</p>
+            </div>
+
+            <div class="box">
+                <i class="fab fa-css3"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, sed.</p>
+            </div>
+
+            <div class="box">
+                <i class="fab fa-js"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, sed.</p>
+            </div>
+
+            <div class="box">
+                <i class="fab fa-wordpress"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, sed.</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-paint-brush"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, sed.</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, sed.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- contact section  -->
+    <section class="contact" id="contact">
+
+        <h1 class="heading">contact me</h1>
+
+        <div class="row">
+
+            <form action="">
+                <input type="text" class="box" placeholder="Name">
+                <input type="email" class="box" placeholder="your email">
+                <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+                <input type="submit" value="message" class="btn">
+            </form>
+
+            <div class="content">
+                <div class="icons">
+                    <h3><i class="fas fa-map-marker-alt"></i> address </h3>
+                    <p>Dhaka,Bangladesh</p>
+                </div>
+                <div class="icons">
+                    <h3><i class="fas fa-envelope"></i> email </h3>
+                    <p>bdtecnical627@gmail.com</p>
+                </div>
+                <div class="icons">
+                    <h3><i class="fas fa-phone"></i> phone </h3>
+                    <p>017-------</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<!-- content section ends -->
+
+<!-- theme toggler  -->
+
+<div class="theme-toggler">
+    <span style="background: linear-gradient(rgb(100, 61, 16), rgb(89, 26, 172));"></span>
+    <span style="background: linear-gradient(rgb(41, 44, 46), rgb(2, 62, 173));"></span>
+    <span style="background:linear-gradient(rgb(1, 95, 99), deeppink)"></span>
+    <span style="background:linear-gradient(rgb(44, 39, 37), rgb(226, 214, 43))"></span>
+    <span style="background:linear-gradient(#999, #111)"></span>
+</div>
+
+
+<!-- type.js cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+<script>
+
+    var type = new Typed('.typing-text',{
+        strings : [ 'Subscribe', 'Like', 'Comments', 'Share' ],
+        typeSpeed: 120,
+        loop:true
+    });
+
+    let themeColor = document.querySelectorAll('.theme-toggler span');
+    themeColor.forEach(color => color.addEventListener('click', () =>{
+        let background = color.style.background;
+        document.querySelector('body').style.background = background;
+    }));
+
+</script>
+    
+</body>
+</html>
